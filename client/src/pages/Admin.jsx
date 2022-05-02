@@ -32,10 +32,12 @@ const Admin = () => {
             image_url: image_url
         })
         .then((res) => {
-            console.log(res)
+          toast.success("Added successfully");
+          console.log(res)
         })
     }
     catch(err){
+        toast.failure("Only admin can add a product");  
         console.log(err)
     }
 
