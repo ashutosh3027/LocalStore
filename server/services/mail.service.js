@@ -15,16 +15,14 @@ const transporter = nodemailer.createTransport({
 });
 
 const url =
-  process.env.NODE_ENV === "production"
-    ? "https://pern-store.netlify.app"
-    : "http://localhost:3000";
+  process.env.NODE_ENV = "http://localhost:3000";
 
 const signupMail = async (to, name) => {
   try {
     const message = {
       from: "pernstore.shop@gmail.com",
       to,
-      subject: "Welcome to PERN Store",
+      subject: "Welcome to Local Store",
       html: html(name),
     };
 

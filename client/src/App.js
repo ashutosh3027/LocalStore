@@ -17,6 +17,7 @@ const Checkout = lazy(() => import("pages/Checkout"));
 const ResetPassword = lazy(() => import("pages/ResetPassword"));
 const Account = lazy(()=> import("pages/Account"))
 const Confirmation = lazy(()=> import("pages/Confirmation"));
+const Admin = lazy(() => import("pages/Admin"))
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
             </Route>
             <Route path="/reset-password">
               <ResetPassword />
+            </Route>
+            <Route path="/admin">
+              <Admin />
             </Route>
             <Route path="*">
               <h1>404 Error Found</h1>
