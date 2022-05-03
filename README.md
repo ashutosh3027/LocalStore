@@ -1,4 +1,4 @@
-# PERN STORE
+# LOCAL STORE
 
 A small full-stack e-commerce project built with Postgres, Express, React and Node.
 
@@ -60,13 +60,11 @@ To run this project, you will need to add the following environment variables to
 
 `REACT_APP_GOOGLE_CLIENT_ID`
 
-`REACT_APP_GOOGLE_CLIENT_SECRET`
-
 `REACT_APP_API_URL`
 
 `REACT_APP_STRIPE_PUB_KEY`
 
-### server/.env
+### server/config.env
 
 `PGUSER`
 

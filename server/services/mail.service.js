@@ -20,7 +20,7 @@ const url =
 const signupMail = async (to, name) => {
   try {
     const message = {
-      from: "pernstore.shop@gmail.com",
+      from: "asverma3027@gmail.com",
       to,
       subject: "Welcome to Local Store",
       html: html(name),
